@@ -1,0 +1,175 @@
+body {
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a,
+nav ul li a {
+    font-family: calibri;
+    font-size: 15px;
+    color: cadetblue;
+    margin: 25px;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#image-header {
+    background-image: url(../img/COMERCIO-INTERNACIONAL.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1 {
+    background-color: yellow;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.section-1-left {
+    background-color: cadetblue;
+    position: relative;
+    width: 25%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: white;
+}
+
+@media screen (max-width: 950px) {
+    .section-1-left {
+        background-color: purple;
+    }
+}
+
+.section-1-right {
+    position: relative;
+    right: 10%;
+    width: 70%;
+}
+
+.section-2 {
+    background-color: brown;
+    position: relative;
+    width: 100vw;
+    height: 53vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2-left {
+    width: 50vw;
+}
+
+.section-2-right {
+    background-color: cadetblue;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+}
+
+.section-3 {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-3-header {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100vw;
+    height: 25vh;
+    text-align: center;
+}
+
+.section-3-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-3-bottom div {
+    background-color: cadetblue;
+    width: 25vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4-header {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100vw;
+    height: 25vh;
+    text-align: center;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 500px;
+}
+
+.servicio {
+    width: 18%;
+    height: 400px;
+    background-color: white;
+}
+
+.servicio img {
+    max-width: 100%;
+    height: 180px;
+}
+
+.servicio h1 {
+    color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-family: 'Poppins';
+}
