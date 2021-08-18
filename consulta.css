@@ -43,14 +43,20 @@ li {
 .section-1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(51, 132, 134);
     width: 100%;
-    height: 92vh;
+    height: 250vh;
 }
 
 .section-1-top {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.section-1-mid {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -63,16 +69,27 @@ li {
 }
 
 .box-size {
-    width: 20%;
-    height: 30vh;
+    width: 40%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     background-color: white;
 }
 
-.box1-top {
+.box-size-top {
     width: 100%;
-    height: 50%;
+    height: 70%;
+}
+
+.box-text-position {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1-top {
     background-image: url(../comercio-internacional/img/importacion.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -80,8 +97,6 @@ li {
 }
 
 .box2-top {
-    width: 100%;
-    height: 50%;
     background-image: url(../comercio-internacional/img/exportacion.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -89,8 +104,6 @@ li {
 }
 
 .box3-top {
-    width: 100%;
-    height: 50%;
     background-image: url(../comercio-internacional/img/transito.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -98,8 +111,6 @@ li {
 }
 
 .box4-top {
-    width: 100%;
-    height: 50%;
     background-image: url(../comercio-internacional/img/tasas.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -107,8 +118,6 @@ li {
 }
 
 .box5-top {
-    width: 100%;
-    height: 50%;
     background-image: url(../comercio-internacional/img/cargos.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -133,12 +142,25 @@ li {
     .burger {
         display: block;
     }
+    .section-1 {
+        height: 400vh;
+    }
+    .box-size {
+        width: 90%;
+    }
     .section-1-top {
         flex-direction: column;
         align-items: center;
+        height: 200vh;
+    }
+    .section-1-mid {
+        flex-direction: column;
+        align-items: center;
+        height: 200vh;
     }
     .section-1-bottom {
         flex-direction: column;
         align-items: center;
+        height: 100vh;
     }
 }
