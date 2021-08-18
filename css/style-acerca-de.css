@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -11,7 +16,7 @@ nav ul {
 }
 
 nav a,
-nav ul li a {
+.links {
     font-family: calibri;
     font-size: 15px;
     color: cadetblue;
@@ -21,6 +26,17 @@ nav ul li a {
 
 li {
     list-style: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: cadetblue;
+    margin: 5px;
+}
+
+.burger {
+    display: none;
 }
 
 .box1 {
@@ -39,7 +55,6 @@ li {
 }
 
 .box1-1 {
-    background-color: yellow;
     background-image: url(../images/gio.jpeg);
     filter: grayscale();
     background-size: cover;
@@ -153,4 +168,65 @@ li {
 footer p {
     text-align: center;
     color: cadetblue;
+}
+
+@media all and (max-width: 950px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav ul {
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 95vh;
+        right: 0%;
+        top: 5vh;
+        background-color: white;
+        z-index: 1;
+        transform: translateX(120%);
+    }
+    .burger {
+        display: block;
+    }
+    .box1 {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .box1-1 {
+        width: 80%;
+    }
+    .box1-2 {
+        width: 80%;
+    }
+    .box2 {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .box2-1 {
+        position: relative;
+        top: 50%;
+        width: 80%;
+    }
+    .box2-2 {
+        position: relative;
+        bottom: 50%;
+        width: 80%;
+    }
+    .box3 {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+    .box3-1 {
+        width: 80%;
+    }
+    .box3-2 {
+        width: 80%;
+    }
+}
+
+.menu-active {
+    transform: translateX(5%);
 }

@@ -17,7 +17,7 @@ nav ul {
 }
 
 nav a,
-nav ul li a {
+.links {
     font-family: calibri;
     font-size: 15px;
     color: cadetblue;
@@ -124,10 +124,16 @@ li {
     background-size: cover;
 }
 
+footer p {
+    text-align: center;
+    color: cadetblue;
+}
+
 @media all and (max-width: 950px) {
+    body {
+        overflow-x: hidden;
+    }
     nav ul {
-        display: none;
-        /* ELIMINAR EL DISPLAY NONE WHEN ADDING JS */
         position: absolute;
         width: 100%;
         flex-direction: column;
@@ -138,6 +144,7 @@ li {
         top: 5vh;
         background-color: white;
         z-index: 1;
+        transform: translateX(120%);
     }
     .burger {
         display: block;
@@ -163,4 +170,8 @@ li {
         align-items: center;
         height: 100vh;
     }
+}
+
+.menu-active {
+    transform: translateX(5%);
 }

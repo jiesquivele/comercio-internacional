@@ -17,7 +17,7 @@ nav ul {
 }
 
 nav a,
-nav ul li a {
+.links {
     font-family: calibri;
     font-size: 15px;
     color: cadetblue;
@@ -81,11 +81,12 @@ h1 {
 
 .section-1-left {
     width: 40%;
-    height: 100vh;
+    height: 105vh;
     border: grey solid 1px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .section-1-left-top {
@@ -98,28 +99,38 @@ h1 {
 }
 
 .section-1-left-mid {
-    padding: 38px;
     width: 100%;
     text-align: justify;
     text-justify: inter-word;
-    padding: 0%;
+    font-size: 15px;
+    padding: 0;
 }
 
 .section-1-left-bottom {
     width: 50%;
-    font-size: 14px;
+    background: #5DB28E;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 50px;
+    bottom: 15px;
+}
+
+.buttons-links {
+    font-size: 20px;
     background: #5DB28E;
     color: white;
-    text-align: center;
+    text-decoration: none;
 }
 
 .section-1-right {
     width: 40%;
-    height: 100vh;
+    height: 105vh;
     border: grey solid 1px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .section-1-right-top {
@@ -132,19 +143,21 @@ h1 {
 }
 
 .section-1-right-mid {
-    padding: 38px;
     width: 100%;
     text-align: justify;
     text-justify: inter-word;
-    padding: 0%;
+    font-size: 15px;
+    padding: 0;
 }
 
 .section-1-right-bottom {
     width: 50%;
-    font-size: 14px;
     background: #5DB28E;
-    color: white;
     text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 50px;
+    bottom: 15px;
 }
 
 .section-1-right p {
@@ -177,10 +190,16 @@ h1 {
     padding-bottom: 25px;
 }
 
+footer p {
+    text-align: center;
+    color: cadetblue;
+}
+
 @media all and (max-width: 950px) {
+    body {
+        overflow-x: hidden;
+    }
     nav ul {
-        display: none;
-        /* ELIMINAR EL DISPLAY NONE WHEN ADDING JS */
         position: absolute;
         width: 100%;
         flex-direction: column;
@@ -191,20 +210,25 @@ h1 {
         top: 5vh;
         background-color: white;
         z-index: 1;
+        transform: translateX(120%);
     }
     .burger {
         display: block;
     }
     .section-1-bottom {
         flex-direction: column;
-        height: 250vh;
+        height: 300vh;
     }
     .section-1-left {
         width: 90%;
-        height: 115vh;
+        height: 150vh;
     }
     .section-1-right {
         width: 90%;
-        height: 115vh;
+        height: 125vh;
     }
+}
+
+.menu-active {
+    transform: translateX(5%);
 }

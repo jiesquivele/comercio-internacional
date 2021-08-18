@@ -4,7 +4,6 @@ body {
 }
 
 nav {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +16,7 @@ nav ul {
 }
 
 nav a,
-nav ul li a {
+.links {
     font-family: calibri;
     font-size: 15px;
     color: cadetblue;
@@ -39,15 +38,6 @@ li {
 .burger {
     display: none;
 }
-
-
-/* .title-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5px;
-    color: cadetblue;
-} */
 
 #image-header {
     background-image: url(../img/COMERCIO-INTERNACIONAL.jpg);
@@ -260,6 +250,11 @@ li {
     background-size: cover;
 }
 
+footer p {
+    text-align: center;
+    color: cadetblue;
+}
+
 
 /* .section-4-bottom div h1 {
     color: cadetblue;
@@ -271,9 +266,10 @@ li {
 } */
 
 @media all and (max-width: 950px) {
+    body {
+        overflow-x: hidden;
+    }
     nav ul {
-        display: none;
-        /* ELIMINAR EL DISPLAY NONE WHEN ADDING JS */
         position: absolute;
         width: 100%;
         flex-direction: column;
@@ -284,6 +280,7 @@ li {
         top: 5vh;
         background-color: white;
         z-index: 1;
+        transform: translateX(120%);
     }
     .burger {
         display: block;
@@ -362,4 +359,8 @@ li {
         align-items: center;
         font-family: 'Poppins';
     }
+}
+
+.menu-active {
+    transform: translateX(5%);
 }
