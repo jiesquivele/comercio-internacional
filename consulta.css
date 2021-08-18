@@ -1,69 +1,144 @@
 body {
-    font-family: 'Poppins';
-    margin: o;
-    padding: 0;
+    margin: 0;
+    min-height: 100vh;
 }
 
-p {
-    font-size: 20px;
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a,
+nav ul li a {
+    font-family: calibri;
+    font-size: 15px;
+    color: cadetblue;
+    margin: 25px;
+    text-decoration: none;
 }
 
 li {
     list-style: none;
-    margin-right: 25px;
 }
 
-#primero {
-    font-size: 30px;
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: cadetblue;
+    margin: 5px;
 }
 
-.menu {
+.burger {
+    display: none;
+}
+
+.section-1 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    color: #5DB28E;
+    background-color: rgb(51, 132, 134);
+    width: 100%;
+    height: 92vh;
 }
 
-ul {
+.section-1-top {
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-a {
-    text-decoration: none;
-}
-
-.consulta {
-    background-color: #259A74;
-}
-
-
-/*Botones*/
-
-.consulta {
+.section-1-bottom {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 500px;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.servicio {
-    width: 18%;
-    height: 400px;
+.box-size {
+    width: 20%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
     background-color: white;
 }
 
-img {
-    max-width: 100%;
-    height: 180px;
+.box1-top {
+    width: 100%;
+    height: 50%;
+    background-image: url(../comercio-internacional/img/importacion.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-h1 {
-    color: #5DB28E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    font-family: 'Poppins';
+.box2-top {
+    width: 100%;
+    height: 50%;
+    background-image: url(../comercio-internacional/img/exportacion.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box3-top {
+    width: 100%;
+    height: 50%;
+    background-image: url(../comercio-internacional/img/transito.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box4-top {
+    width: 100%;
+    height: 50%;
+    background-image: url(../comercio-internacional/img/tasas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box5-top {
+    width: 100%;
+    height: 50%;
+    background-image: url(../comercio-internacional/img/cargos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media all and (max-width: 950px) {
+    nav ul {
+        display: none;
+        /* ELIMINAR EL DISPLAY NONE WHEN ADDING JS */
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 95vh;
+        right: 0%;
+        top: 5vh;
+        background-color: white;
+        z-index: 1;
+    }
+    .burger {
+        display: block;
+    }
+    .section-1-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-1-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
 }

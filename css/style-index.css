@@ -4,6 +4,7 @@ body {
 }
 
 nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +50,7 @@ li {
 
 #image-header {
     background-image: url(../img/COMERCIO-INTERNACIONAL.jpg);
+    width: 100%;
     height: 100vh;
     opacity: 0.5;
     background-attachment: fixed;
@@ -67,7 +69,7 @@ li {
 }
 
 .section-1 {
-    background-color: yellowgreen;
+    background-color: white;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -102,7 +104,6 @@ li {
 }
 
 .section-1-right {
-    background-color: yellow;
     background-image: url(../img/expor.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -115,17 +116,22 @@ li {
 }
 
 .section-2 {
-    background-color: brown;
+    background-color: white;
     position: relative;
-    width: 100vw;
-    height: 53vh;
+    width: 100%;
+    height: 50vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .section-2-left {
-    width: 50vw;
+    background-image: url(../img/expor.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
 }
 
 .section-2-right {
@@ -141,9 +147,140 @@ li {
     color: white;
 }
 
+.section-3 {
+    background-color: white;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-3-header {
+    background-image: url(../img/expor.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+}
+
+.section-3-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-3-bottom div {
+    background-color: cadetblue;
+    width: 25vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 100%;
+    height: 70vh;
+}
+
+.section-4-header {
+    background-image: url(../img/expor.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+}
+
+.section-4-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-4-bottom div {
+    width: 15%;
+    height: 20vh;
+    color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+#image-importacion {
+    background-image: url(../img/importacion.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image-exportacion {
+    background-image: url(../img/exportacion.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image-transito {
+    background-image: url(../img/transito.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image-tasas {
+    background-image: url(../img/tasas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image-cargos {
+    background-image: url(../img/cargos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* .section-4-bottom div h1 {
+    color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-family: 'Poppins';
+} */
+
 @media all and (max-width: 950px) {
     nav ul {
         display: none;
+        /* ELIMINAR EL DISPLAY NONE WHEN ADDING JS */
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 95vh;
+        right: 0%;
+        top: 5vh;
+        background-color: white;
+        z-index: 1;
     }
     .burger {
         display: block;
@@ -174,79 +311,52 @@ li {
         font-size: 1em;
         text-align: center;
     }
-}
-
-.section-3 {
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.section-3-header {
-    background-color: yellowgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-    width: 100vw;
-    height: 25vh;
-    text-align: center;
-}
-
-.section-3-bottom {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.section-3-bottom div {
-    background-color: cadetblue;
-    width: 25vw;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-4-header {
-    background-color: yellowgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-    width: 100vw;
-    height: 25vh;
-    text-align: center;
-}
-
-.section-4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 500px;
-}
-
-.servicio {
-    width: 18%;
-    height: 400px;
-    background-color: white;
-}
-
-.servicio img {
-    max-width: 100%;
-    height: 180px;
-}
-
-.servicio h1 {
-    color: cadetblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    font-family: 'Poppins';
+    .section-2-left {
+        position: relative;
+        right: -10%;
+    }
+    .section-2-right {
+        position: relative;
+        height: 80%;
+        left: -10%;
+    }
+    .section-3 {
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        background-color: white;
+    }
+    .section-3-bottom {
+        height: 60vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: cadetblue;
+    }
+    .section-3-bottom div {
+        width: 90vw;
+        height: 15vh;
+        background-color: white;
+    }
+    .section-4 {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 150vh;
+        background-color: white;
+    }
+    .section-4-bottom {
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .section-4-bottom div {
+        width: 90%;
+        height: 20vh;
+        color: cadetblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins';
+    }
 }
